@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Билеты на теплоход</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        
+        <div class="center">
+
+            <div class="schedule__container active">
+                <h2 class="schedule-title">Забронировать поездку</h2>
+
+                <form id="form" method="post" class="form__container">
+                    <div class="ticket-cost"><span class="bold">"из Москвы в Питер"</span> и <span class="bold">"из
+                            Питера в Москву"</span> стоимость одного билета 700р.
+                    </div>
+                    <div class="ticket-cost"><span class="bold">"из Москвы в Питер и обратно в Москву"</span>
+                        стоимость
+                        составного билета 1200р
+                    </div>
+
+                    <div class="select__container">
+                        <!-- -------------select-elem-one--------------->
+                        <div class="label__container">
+                            <div class="radio__box">
+                                <input type="radio" id="story__one" value="из Москвы в Питер" name="story" checked
+                                    class="form-element radio-element">
+                                <label for="story__one" class="form-label label-text-input">
+                                    из Москвы в Питер
+                                </label>
+                            </div>
+
+                            <label for="ticket_rout" class="form-label">
+                                <button class="plas plas-ticket-one">+</button>
+                                <input type="number" id="ticket_quantity" name="ticket_rout"
+                                    class="form-element rout-one">
+                                <button class="minus minus-ticket-one">-</button>
+                            </label>
+                            <select name="time" id="time" class="select-elem-one">
+                                <option value='Выберите время'>
+                                    Выберите время
+                                </option>
+                                <option value='18:00'>
+                                    <span class="hour">18</span> :
+                                    <span class="minutes">00</span>
+                                </option>
+                                <option value="18:30">
+                                    <span class="hour">18</span> :
+                                    <span class="minutes">30</span>
+                                </option>
+                                <option value="18:45">
+                                    <span class="hour">18</span> :
+                                    <span class="minutes">45</span>
+                                </option>
+                                <option value="19:00">
+                                    <span class="hour">19</span> :
+                                    <span class="minutes">00</span>
+                                </option>
+                                <option value="19:15">
+                                    <span class="hour">19</span> :
+                                    <span class="minutes">15</span>
+                                </option>
+                                <option value="21:00">
+                                    <span class="hour">21</span> :
+                                    <span class="minutes">00</span>
+                                </option>
+                            </select>
+                        </div>
+                        <!-- ----------select-elem-two-------------->
+                        <div class="label__container">
+                            <div class="radio__box">
+                                <input type="radio" id="story__two" value="из Питера в Москву" name="story"
+                                    class="form-element radio-element ">
+                                <label for="story__two" class="form-label label-text-input">
+                                    из Питера в Москву
+                                </label>
+                            </div>
+
+
+                            <label for="ticket_rout" class="form-label">
+                                <button class="plas plas-ticket-two">+</button>
+                                <input type="number" id="ticket_quantity" name="ticket_rout"
+                                    class="form-element rout-two">
+                                <button class="minus minus-ticket-two">-</button>
+                            </label>
+
+                            <select name="time" id="time" class="select-elem-two">
+                                <option value='Выберите время'>
+                                    Выберите время
+                                </option>
+                                <option value='18:00'>
+                                    <span class="hour">18</span> :
+                                    <span class="minutes">00</span>
+                                </option>
+                                <option value="18:30">
+                                    <span class="hour">18</span> :
+                                    <span class="minutes">30</span>
+                                </option>
+                                <option value="18:45">
+                                    <span class="hour">18</span> :
+                                    <span class="minutes">45</span>
+                                </option>
+                                <option value="19:00">
+                                    <span class="hour">19</span> :
+                                    <span class="minutes">00</span>
+                                </option>
+                                <option value="19:15">
+                                    <span class="hour">19</span> :
+                                    <span class="minutes">15</span>
+                                </option>
+                                <option value="21:00">
+                                    <span class="hour">21</span> :
+                                    <span class="minutes">00</span>
+                                </option>
+                            </select>
+                        </div>
+                        <!-- -----------select-elem-three----------- -->
+                        <div class="label__container">
+                            <div class="radio__box">
+                                <input type="radio" id="story__three" value="из Москвы в Питер и обратно в Москву"
+                                    name="story" class="form-element radio-element">
+                                <label for="story__three" class="form-label label-text-input">
+                                    из Москвы в Питер и обратно в Москву
+                                </label>
+                            </div>
+
+                            <label for="ticket_rout" class="form-label">
+                                <button class="plas plas-ticket-three">+</button>
+                                <input type="number" id="ticket_quantity" name="ticket_rout"
+                                    class="form-element rout-three">
+                                <button class="minus minus-ticket-three">-</button>
+                            </label>
+
+
+                            <select name="time" id="time" class="select-elem-three">
+                                <option value='Выберите время'>
+                                    в Питер
+                                </option>
+                                <option value='18:00'>
+                                    <span class="hour">18</span> :
+                                    <span class="minutes">00</span>
+                                </option>
+                                <option value="18:30">
+                                    <span class="hour">18</span> :
+                                    <span class="minutes">30</span>
+                                </option>
+                                <option value="18:45">
+                                    <span class="hour">18</span> :
+                                    <span class="minutes">45</span>
+                                </option>
+                                <option value="19:00">
+                                    <span class="hour">19</span> :
+                                    <span class="minutes">00</span>
+                                </option>
+                                <option value="19:15">
+                                    <span class="hour">19</span> :
+                                    <span class="minutes">15</span>
+                                </option>
+                                <option value="21:00">
+                                    <span class="hour">21</span> :
+                                    <span class="minutes">00</span>
+                                </option>
+                            </select>
+
+
+                            <select name="time" id="time" class="select-elem-four">
+                                <option value='Выберите время'>
+                                    в Москву
+                                </option>
+                                <option value='19:00'>
+                                    <span class="hour">19</span> :
+                                    <span class="minutes">00</span>
+                                </option>
+                                <option value="19:30">
+                                    <span class="hour">19</span> :
+                                    <span class="minutes">30</span>
+                                </option>
+                                <option value="19:45">
+                                    <span class="hour">19</span> :
+                                    <span class="minutes">45</span>
+                                </option>
+                                <option value="20:00">
+                                    <span class="hour">20</span> :
+                                    <span class="minutes">00</span>
+                                </option>
+                                <option value="20:15">
+                                    <span class="hour">20</span> :
+                                    <span class="minutes">15</span>
+                                </option>
+                                <option value="22:00">
+                                    <span class="hour">22</span> :
+                                    <span class="minutes">00</span>
+                                </option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <button type="button" class="button-send">Посчитать стоимость поездки</button>
+                </form>
+            </div>
+
+            <div class="resalt__container disactive">
+                <div class="ticket-text ticket-total-cost">
+                    <p>
+                        Количество билетов: <span class="total-ticket"></span>
+                    </p>
+                    <p>
+                        Маршрут: <span class="total-way"></span>
+                    </p>
+                    <p>
+                        Общая стоимость:<span class="total-cost"></span>
+                    </p>
+                </div>
+                <div class="ticket-text total-time">
+                    Общее время поездки: <span class="total-time-resalt"></span>
+                </div>
+                <div class="ticket-text ticket-schedule">
+                    <p>
+                        Время отправления: <span class="departure-time"></span>
+                    </p>
+                    <p>
+                        Время прибытия: <span class="arrival-time"></span>
+                    </p>
+                </div>
+                <button class="button-return">Вернуться на страницу выбора поездки</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>

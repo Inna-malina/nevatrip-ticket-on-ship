@@ -1,0 +1,191 @@
+@import './resalt.css';
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.center {
+    max-width: 750px;
+    margin: 0px auto;
+    
+}
+
+.flex__container{
+    display: flex;
+}
+
+.schedule__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.ticket-cost {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0px 0px 15px 0px
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.ticket-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.select__container>*:not(:last-child) {
+    margin: 0px 0px 30px 0px;
+}
+
+.schedule-title {
+    padding: 100px 0px 20px 0px;
+}
+
+.form__container {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
+    padding: 25px;
+    max-width: 750px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.select__container {
+    padding: 30px 0px 30px 30px;
+
+}
+.label__container{
+    display: flex;
+    align-items: center;    
+}
+.label__container>*:not(:last-child) {
+    margin: 0px 20px 0px 0px
+}
+
+.form-label {
+    font-size: 16px;
+}
+
+
+.rout-one, .rout-two, .rout-three {
+    width: 50px;
+    height: 25px;
+    border: 1px solid rgba(133, 196, 255, 0.37);
+    color: rgb(80, 169, 252);
+    font-size: 16px;
+    padding: 0px 0px 0px 10px;
+    outline: none;
+}
+
+.plas, .minus {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(66, 164, 255, 0.37);
+    color: white;
+    font-size: 16px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.select-elem-one, .select-elem-two, .select-elem-three, .select-elem-four {
+    background: rgba(66, 164, 255, 0.37);
+    height: 25px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    padding: 3px;
+}
+
+/* ----radio__box---- */
+.radio__box {
+    display: flex;
+    position: relative;
+}
+.radio-element {
+    width: 16px;
+    height: 16px;
+    outline: none;
+}
+
+.radio__box .radio-element[type=radio] {
+    display: none;
+}
+
+/* ------бордер кружка------- */
+.radio__box .label-text-input::before {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: -30px;
+    border-radius: 50%;
+    border: 1px solid rgba(66, 164, 255, 0.37);
+}
+
+/* Checked */
+.radio__box .radio-element[type=radio]:checked+.label-text-input::after {
+    content: "";
+    display: block;
+    top: 4px;
+    left: -26px;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(66, 164, 255, 0.37);
+}
+
+.button-send {
+    cursor: pointer;
+    width: 400px;
+    background: rgba(66, 164, 255, 0.37);
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    padding: 3px;
+    display: block;    
+}
+
+.rout-container {
+    display: block;
+}
+
+.active {
+    display: block;
+}
+
+.disactive {
+    display: none;
+}

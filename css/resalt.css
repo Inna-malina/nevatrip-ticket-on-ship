@@ -1,0 +1,51 @@
+.resalt__container {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
+    padding: 25px;
+    max-width: 750px;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+}
+
+.resalt__container>*:not(:last-child){
+    margin: 0px 0px 15px 0px;
+}
+.ticket-text {
+}
+
+.ticket-text>*:not(:last-child) {
+    margin: 0px 0px 15px 0px;
+}
+
+.button-return{
+    cursor: pointer;
+    width: 400px;
+    background: rgba(66, 164, 255, 0.37);
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    padding: 3px;
+    display: block; 
+}
+.ticket-total-cost {
+}
+.total-ticket {
+}
+.total-way {
+}
+.total-cost {
+}
+.total-time {
+}
+.ticket-schedule {
+}
+.departure-time {
+}
+.arrival-time {
+}
