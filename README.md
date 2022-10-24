@@ -1,1 +1,1 @@
-# nevatrip-ticket-on-ship
+https://inna-malina.github.io/nevatrip-ticket-on-ship/
